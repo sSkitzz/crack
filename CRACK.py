@@ -50,7 +50,7 @@ async def on_message(message):
         randomlist = ["ROCK","PAPER","SCISSORS "]
         await client.send_message(message.channel,(random.choice(randomlist)))
         
-        @client.command(pass_context=True)
+@client.command(pass_context=True)
 async def help(ctx):
     author = ctx.message.author
 
