@@ -38,8 +38,6 @@ async def on_message(message):
         await client.send_message(message.channel,'```!HIT OR MISS !YOUTUBE !TWITTER```')
     if message.content == 'hi':
         await client.send_message(message.channel,'HEY')
-    if message.content == '+help':
-        await client.send_message(message.channel,'twitter,youtube,hi.')
     if message.content.startswith('ROCK'):
         randomlist = ["ROCK","PAPER","SCISSORS "]
         await client.send_message(message.channel,(random.choice(randomlist)))
