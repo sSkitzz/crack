@@ -49,7 +49,7 @@ async def on_message(message):
         await client.send_message(message.channel,(random.choice(randomlist)))
         
 @client.command(pass_context=True)
-async def help(ctx):
+async def pills(ctx):
     author = ctx.message.author
 
     embed = discord.Embed(
